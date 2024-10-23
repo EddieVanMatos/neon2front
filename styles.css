@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(31, 31, 31, 0.8); /* Fundo translúcido */
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.3); /* Neon azul ao redor */
+    backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ffcc;
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.7); /* Neon azul suave no texto */
+}
+
+.form-container {
+    margin-bottom: 40px;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.4s ease, box-shadow 0.3s ease; /* Transição suave */
+    outline: none; /* Remove borda de foco padrão */
+}
+
+input {
+    background-color: rgba(51, 51, 51, 0.7); /* Fundo translúcido no input */
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2); /* Leve neon no input */
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:hover {
+    background-color: rgba(51, 51, 51, 0.9); /* Efeito ao passar o mouse */
+}
+
+button {
+    background-color: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Neon em torno do botão */
+}
+
+button:hover {
+    background-color: #00cc99;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 1); /* Efeito neon mais forte no hover */
+}
+
+.course-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list li {
+    background-color: rgba(41, 41, 41, 0.8); /* Fundo translúcido nos itens */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.3); /* Leve efeito neon nos itens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+}
+
+.course-list li:hover {
+    transform: translateY(-5px); /* Leve elevação no hover */
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.6); /* Mais destaque ao passar o mouse */
+}
+
+.course-list button {
+    background-color: #ff3333;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.5); /* Neon leve nos botões de deletar */
+}
+
+.course-list button:hover {
+    background-color: #cc0000;
+    box-shadow: 0 0 20px rgba(255, 51, 51, 1); /* Neon vermelho mais forte no hover */
+}
